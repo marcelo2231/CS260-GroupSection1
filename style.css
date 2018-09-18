@@ -159,3 +159,15 @@ div.desc {
         height:2px;
         width:60%;
     }
+    
+.try-on {
+    display: block;
+}
+
+.try-on-shoes {
+    position:relative;
+    bottom:100px;
+    left:100px;
+    height:90px;
+    width: auto;
+}

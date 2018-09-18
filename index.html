@@ -10,141 +10,170 @@
     
     <body>
         <section class="page">
-        <section class="section-body">
-            <h1>Welcome to the Sneaker Rack</h1>
-            <br>
-            <p>Your place to let the world know what kind of air you are walking around on. </p>
-            <br>
-            <a>Brands to Choose From:</a>
-            <ul>
-                <li><a href="#nike">Nike</a></li>
-                <li><a href="#adidas">Adidas</a></li>
-                <li><a href="#jordan">Jordan</a></li>
-            </ul>
+            <section class="section-body">
+                <h1>Welcome to the Sneaker Rack</h1>
+                <br>
+                <p>Your place to let the world know what kind of air you are walking around on. </p>
+                <br>
+                <a>Brands to Choose From:</a>
+                <ul>
+                    <li><a href="#nike">Nike</a></li>
+                    <li><a href="#adidas">Adidas</a></li>
+                    <li><a href="#jordan">Jordan</a></li>
+                </ul>
+                
+                <button onclick="hideFunctionNike()">Click Here if Nike is your favorite!</button>
+                <button onclick="hideFunctionAdidas()">Click Here if Adidas is your favorite!</button>
+                <button onclick="hideFunctionJordan()">Click Here if Jordan is your favorite!</button>
+            </section>
             
-            <button onclick="hideFunctionNike()">Click Here if Nike is your favorite!</button>
-            <button onclick="hideFunctionAdidas()">Click Here if Adidas is your favorite!</button>
-            <button onclick="hideFunctionJordan()">Click Here if Jordan is your favorite!</button>
-        </section>
-        
-        <section id="nike" style="background-color: white;>
-            <header class="section-header">
-                <h2>Nike</h2>
-            </header>
-            <div class="section-body">
-                <div class="row">
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/05-nikeairprestos-jpg-1533847017.jpg" alt="nike air presto">
-                            <a href="https://bit.ly/2Oty19V" target="_blank" class="project-card-content">
-                                <h4>Nike</h4>
-                                <p>Air Presto</p>
-                            </a>
+            <section id="nike" style="background-color: white;>
+                <header class="section-header">
+                    <h2>Nike</h2>
+                </header>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/05-nikeairprestos-jpg-1533847017.jpg" alt="nike air presto" id="nike1">
+                                <a href="https://bit.ly/2Oty19V" target="_blank" class="project-card-content">
+                                    <h4>Nike</h4>
+                                    <p>Air Presto</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('nike1')">Try on these shoes!</button>
+                            <!--<h1>Try on Virtually!</h1>-->
                         </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/26-nikeairskylon2-jpg-1533847018.jpg" alt="nike air skylon">
-                            <a href="https://swoo.sh/2PLj97j" target="_blank" class="project-card-content">
-                                <h4>Nike</h4>
-                                <p>Air Skylon</p>
-                            </a>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/26-nikeairskylon2-jpg-1533847018.jpg" alt="nike air skylon" id="nike2">
+                                <a href="https://swoo.sh/2PLj97j" target="_blank" class="project-card-content">
+                                    <h4>Nike</h4>
+                                    <p>Air Skylon</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('nike2')">Try on these shoes!</button>
                         </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/0216-rfnikelebron15-1518730199.jpg" alt="nike kith lebron">
-                            <a href="https://swoo.sh/2MFxekx" target="_blank" class="project-card-content">
-                                <h4>Nike</h4>
-                                <p>Air Lebron</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="adidas" style="background-color: white;">
-            <header class="section-header">
-                <h2>Adidas</h2>
-                <hr class="line"/>
-            </header>
-            <div class="section-body">
-                <div class="row">
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/0118-adidasfuturecraft4dashgreen-1516309198.jpg" alt="adidas futurecraft 4d">
-                            <a href="https://bit.ly/2MGk5b9" target="_blank" class="project-card-content">
-                                <h4>Adidas</h4>
-                                <p>Future Craft 4d</p>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/adidas_x_kith.jpg" alt="adidas x kith">
-                            <a href="https://bit.ly/2xozsiQ" target="_blank" class="project-card-content">
-                                <h4>Adidas</h4>
-                                <p>X Kith Response TR Boost</p>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/alphabounce.jpg" alt="ultra alphabounce">
-                            <a href="https://bit.ly/2xpRYHo" target="_blank" class="project-card-content">
-                                <h4>Adidas</h4>
-                                <p>Alphabounce Instinct</p>
-                            </a>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/0216-rfnikelebron15-1518730199.jpg" alt="nike kith lebron" id="nike3">
+                                <a href="https://swoo.sh/2MFxekx" target="_blank" class="project-card-content">
+                                    <h4>Nike</h4>
+                                    <p>Air Lebron</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('nike3')">Try on these shoes!</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="jordan" style="background-color: white;>
-            <header class="section-header">
-                <h2>Jordan</h2>
-            </header>
-            <div class="section-body">
-                <div class="row">
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/0117-airjordanlevisiv-1516309198.jpg" alt="levis denim jordan 4">
-                            <a href="https://bit.ly/2NV90aU" target="_blank" class="project-card-content">
-                                <h4>Jordan</h4>
-                                <p>Air Jordan Levis</p>
-                            </a>
+            </section>
+            
+            <section id="adidas" style="background-color: white;">
+                <header class="section-header">
+                    <h2>Adidas</h2>
+                    <hr class="line"/>
+                </header>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/0118-adidasfuturecraft4dashgreen-1516309198.jpg" alt="adidas futurecraft 4d" id="adidas1">
+                                <a href="https://bit.ly/2MGk5b9" target="_blank" class="project-card-content">
+                                    <h4>Adidas</h4>
+                                    <p>Future Craft 4d</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('adidas1')">Try on these shoes!</button>
                         </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/0204-airjordan3jth-1518116996.jpg" alt="tinker hatfield jordan 3">
-                            <a href="https://bit.ly/2D6s69P" target="_blank" class="project-card-content">
-                                <h4>Jordan</h4>
-                                <p>Tinker Hatfield</p>
-                            </a>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/adidas_x_kith.jpg" alt="adidas x kith" id="adidas2">
+                                <a href="https://bit.ly/2xozsiQ" target="_blank" class="project-card-content">
+                                    <h4>Adidas</h4>
+                                    <p>X Kith Response TR Boost</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('adidas2')">Try on these shoes!</button>
                         </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="project-card">
-                            <img src="./images/0216-airjordan1goldtoe-1518730198.jpg" alt="gold jordan 1">
-                            <a href="https://bit.ly/2NmYkSZ" target="_blank" class="project-card-content">
-                                <h4>Jordan</h4>
-                                <p>Air Jordan Gold Toe</p>
-                            </a>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/alphabounce.jpg" alt="ultra alphabounce" id="adidas3">
+                                <a href="https://bit.ly/2xpRYHo" target="_blank" class="project-card-content">
+                                    <h4>Adidas</h4>
+                                    <p>Alphabounce Instinct</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('adidas3')">Try on these shoes!</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            
+            <section id="jordan" style="background-color: white;>
+                <header class="section-header">
+                    <h2>Jordan</h2>
+                </header>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/0117-airjordanlevisiv-1516309198.jpg" alt="levis denim jordan 4" id="jordan1">
+                                <a href="https://bit.ly/2NV90aU" target="_blank" class="project-card-content">
+                                    <h4>Jordan</h4>
+                                    <p>Air Jordan Levis</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('jordan1')">Try on these shoes!</button>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/0204-airjordan3jth-1518116996.jpg" alt="tinker hatfield jordan 3" id="jordan2">
+                                <a href="https://bit.ly/2D6s69P" target="_blank" class="project-card-content">
+                                    <h4>Jordan</h4>
+                                    <p>Tinker Hatfield</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('jordan2')">Try on these shoes!</button>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/0216-airjordan1goldtoe-1518730198.jpg" alt="gold jordan 1" id="jordan3">
+                                <a href="https://bit.ly/2NmYkSZ" target="_blank" class="project-card-content">
+                                    <h4>Jordan</h4>
+                                    <p>Air Jordan Gold Toe</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('jordan3')">Try on these shoes!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                    <div class="section-body">
+                        <div id="tryOnImage" class="try-on">
+                            <img src="./images/DSC_0243.jpg" alt="image to show shoes on foot" style="margin-top: 40px">
+                        </div>
+                        <div id="finalDestination" class="try-on-shoes">
+                        
+                        </div>
+                    </div>
+            </section>
+            
         </section>
-        </section>
+        
+        <script>
+            function moveImageHere(id) {
+                var x = document.getElementById(id).src;
+                document.getElementById("finalDestination").innerHTML="<img src='" + x + "' />";
+            }
+        </script>
         
         <script>
             function hideFunctionNike() {
