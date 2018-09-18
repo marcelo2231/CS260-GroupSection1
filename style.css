@@ -8,14 +8,18 @@ body {
     font-family: 'Montserrat';
     margin-left: 10%;
     margin-right: 10%;
-    /*background-image: url("./images/1.jpg");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+    /*background-image: url("./images/sneaker-shop.jpg");*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     position: relative;
     text-align: center;
     list-style-position: inside;
+    background: url(./images/sneaker-shop.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -40,8 +44,10 @@ a {
 .page .section-body {
     margin: auto;
     width: 800px;
+    width: 100%;
     padding-left: 40px;
     padding-right: 40px;
+    background-color: white;
     
 }
 .page-header-image-full {
@@ -146,3 +152,10 @@ div.desc {
 #jordan {
     display: none;
 }
+
+.line {
+        padding-left : 2vw;
+        background-color:black;
+        height:2px;
+        width:60%;
+    }
