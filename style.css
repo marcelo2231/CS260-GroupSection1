@@ -43,8 +43,7 @@ a {
 .page .section-header,
 .page .section-body {
     margin: auto;
-    width: 800px;
-    width: 100%;
+    width: auto;
     padding-left: 40px;
     padding-right: 40px;
     background-color: white;
