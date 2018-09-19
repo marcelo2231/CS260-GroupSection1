@@ -20,11 +20,13 @@
                     <li><a href="#nike">Nike</a></li>
                     <li><a href="#adidas">Adidas</a></li>
                     <li><a href="#jordan">Jordan</a></li>
+                    <li><a href="#others">Others</a></li>
                 </ul>
                 
                 <button onclick="hideFunctionNike()">Click Here if Nike is your favorite!</button>
                 <button onclick="hideFunctionAdidas()">Click Here if Adidas is your favorite!</button>
                 <button onclick="hideFunctionJordan()">Click Here if Jordan is your favorite!</button>
+                <button onclick="hideFunctionOthers()">Click Here if you want other options!</button>
             </section>
             
             <section id="nike" style="background-color: white;>
@@ -41,7 +43,7 @@
                                     <p>Air Presto</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('nike1')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('nike1')"><a href="#tryOnImage"><a href="#tryOnImage">Try on these shoes!</a></a></button>
                             <!--<h1>Try on Virtually!</h1>-->
                         </div>
                         
@@ -53,7 +55,7 @@
                                     <p>Air Skylon</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('nike2')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('nike2')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                         
                         <div class="col">
@@ -64,7 +66,7 @@
                                     <p>Air Lebron</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('nike3')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('nike3')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +87,7 @@
                                     <p>Future Craft 4d</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('adidas1')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('adidas1')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                         
                         <div class="col">
@@ -96,7 +98,7 @@
                                     <p>X Kith Response TR Boost</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('adidas2')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('adidas2')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                         
                         <div class="col">
@@ -107,7 +109,7 @@
                                     <p>Alphabounce Instinct</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('adidas3')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('adidas3')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +129,7 @@
                                     <p>Air Jordan Levis</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('jordan1')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('jordan1')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                         
                         <div class="col">
@@ -138,7 +140,7 @@
                                     <p>Tinker Hatfield</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('jordan2')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('jordan2')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                         
                         <div class="col">
@@ -149,7 +151,50 @@
                                     <p>Air Jordan Gold Toe</p>
                                 </a>
                             </div>
-                            <button onclick="moveImageHere('jordan3')">Try on these shoes!</button>
+                            <button onclick="moveImageHere('jordan3')"><a href="#tryOnImage">Try on these shoes!</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="others" style="background-color: white;">
+                <header class="section-header">
+                    <h2>Others</h2>
+                    <hr class="line"/>
+                </header>
+                <div class="section-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/BAPE.jpg" alt="NMD_R1 Bape" id="adidas4">
+                                <a href="https://bit.ly/2phPFCu" target="_blank" class="project-card-content">
+                                    <h4>Adidas</h4>
+                                    <p>NMD_R1 Bape</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('adidas4')"><a href="#tryOnImage">Try on these shoes!</a></button>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/pizza_hut.jpg" alt="pizza hut red" id="pizzahut1">
+                                <a href="https://ebay.to/2plX5F6" target="_blank" class="project-card-content">
+                                    <h4>Pizza Hut</h4>
+                                    <p>Pie Tops Red Marinera</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('pizzahut1')"><a href="#tryOnImage">Try on these shoes!</a></button>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="project-card">
+                                <img src="./images/pumaX.jpg" alt="ultra alphabounce" id="puma1">
+                                <a href="https://bit.ly/2OC24w6" target="_blank" class="project-card-content">
+                                    <h4>Puma</h4>
+                                    <p>Suede Classic MCM</p>
+                                </a>
+                            </div>
+                            <button onclick="moveImageHere('puma1')"><a href="#tryOnImage">Try on these shoes!</a></button>
                         </div>
                     </div>
                 </div>
@@ -208,5 +253,15 @@
             }
         </script>
         
+        <script>
+            function hideFunctionOthers() {
+                 var z = document.getElementById("others");
+                if (z.style.display === "block") {
+                    z.style.display = "none";
+                } else {
+                    z.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>

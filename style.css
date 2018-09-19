@@ -153,6 +153,10 @@ div.desc {
     display: none;
 }
 
+#others {
+    display: none;
+}
+
 .line {
         padding-left : 2vw;
         background-color:black;
